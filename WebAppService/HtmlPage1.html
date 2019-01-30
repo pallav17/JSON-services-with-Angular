@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <!--<div class="row">
+            <div class="col-sm-4" style="background-color:lavender;">{{employee.name}}</div>
+            <div class="col-sm-4" style="background-color:lavenderblush;">{{employee.name}}</div>
+            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+        </div>
+    </div>-->
+
+        <div class="container">
+            <table border="1" class="table">
+                <thead>
+                    <tr bgcolor ="#98fb98">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>dept</th>
+                        <th>age</th>
+                        <th>Salary</th>
+                        <th>location</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr ng-repeat="employee in employee" bgcolor ="cyan">
+
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.dept}}</td>
+                        <td>{{employee.age}}</td>
+                        <td>{{employee.salary}}</td>
+                        <td>{{employee.location}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    
+
+</body>
+</html>
